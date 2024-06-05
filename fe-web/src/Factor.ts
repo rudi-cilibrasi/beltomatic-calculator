@@ -15,9 +15,9 @@ export function costForOperator(op: BinaryOperator): number {
 }
 export function costForExtractor(num: number): number {
     switch (num) {
-        case 1: return 1.0;
-        case 2: return 1.3;
-        case 3: return 1.8;
+        case 1: return 1.4;
+        case 2: return 1.8;
+        case 3: return 2.8;
         case 4: return 3;
         case 5: return 2.5;
         case 6: return 5;
