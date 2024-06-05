@@ -27,7 +27,7 @@ function App() {
     <>
       <h1>Beltmatic Calculator</h1>
       <div className="container">
-        Number:<input type="number" onKeyUp={(e) => {
+        Number:<input inputMode="numeric" type="text" onKeyUp={(e) => {
           //          if (e.key == 'Enter') {
           handleNumberEntered(+(e.target as HTMLInputElement).value);
           //          }
