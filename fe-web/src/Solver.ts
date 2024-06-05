@@ -232,5 +232,5 @@ export class Solver {
 
 
 function smallExtractors() {
-    return [1, 2, 3, 4, 5, 6, 7, 11, 13, 17];
+    return [1, 2, 3, 4, 5, 6, 7, 9, 11, 13, 17];
 }
