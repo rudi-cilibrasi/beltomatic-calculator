@@ -22,6 +22,7 @@ export function costForExtractor(num: number): number {
         case 5: return 2.5;
         case 6: return 5;
         case 7: return 5.1;
+        case 9: return 5.7;
         case 11: return 6.5;
         case 13: return 7;
         case 17: return 9;
