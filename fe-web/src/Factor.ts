@@ -93,7 +93,13 @@ export function evalTree(tree: TreeNode): number {
 export function printTree(tree: TreeNode): string {
     switch (tree.length) {
         case 3:
-            return "(" + printTree(tree[1]) + " " + tree[0] + " " + printTree(tree[2]) + ")";
+            const sideLeft = printTree(tree[1])
+            const sideright = printTree(tree[2])
+            const maxLen = Math.max(sideLeft.length, sideright.length)
+            const minLen = Math.min(sideLeft.length, sideright.length)
+            const brTag = (maxLen > 20 && minLen > 7) ? "\n" : ""
+
+            return "(" + printTree(tree[1]) + " " + tree[0] + brTag + " " + printTree(tree[2]) + ")";
         case 1:
             return '' + tree[0];
         default:
