@@ -25,7 +25,7 @@ function handleNumberEntered(num: number) {
 function App() {
   return (
     <>
-      <h1>Beltomatic Calculator</h1>
+      <h1>Beltmatic Calculator</h1>
       <div className="card">
         Number:<input type="number" onKeyUp={(e) => {
           //          if (e.key == 'Enter') {
@@ -36,7 +36,7 @@ function App() {
         } />
         <h2 id="resulteq"> Enter number above</h2>
       </div>
-      <a href="https://store.steampowered.com/app/2674590/Beltmatic/"><h3>Beltomatic on Steam</h3></a>
+      <a href="https://store.steampowered.com/app/2674590/Beltmatic/"><h3>Beltmatic on Steam</h3></a>
     </>
   )
 }

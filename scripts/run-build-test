@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+set -e
+cd $(dirname $0)
+cd ../fe-web
+rm -rf dist node_modules
+npm install
+npm run build
+test -f dist/index.html
+exit 0
