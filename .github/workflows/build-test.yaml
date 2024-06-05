@@ -1,17 +1,18 @@
+#      volumes:
+#        - my_docker_volume:/volume_mount
 name: Node.js CI
-
 on: [push]
-
 jobs:
   build:
-
-    runs-on: ubuntu:24.04
-
+    runs-on: ubuntu-latest
+    container:
+      image: node:20-bookworm
+      env:
+        NODE_ENV: development
+      ports:
+        - 80
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-      - run: npm ci
-      - run: npm run build
+      - run: rm -rf node_modules fe-web/node_modules dist fe-web/dist
+      - run: cd fe-web && npm i
+      - run: cd fe-web && npm run build
