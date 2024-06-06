@@ -37,6 +37,7 @@ function App() {
         <h2 id="resulteq"> Enter number above</h2>
       </div>
       <a href="https://store.steampowered.com/app/2674590/Beltmatic/"><h3>Beltmatic on Steam</h3></a>
+      <a href="https://github.com/rudi-cilibrasi/beltomatic-calculator"><h3>Beltmatic Calculator on GitHub</h3></a>
     </>
   )
 }
